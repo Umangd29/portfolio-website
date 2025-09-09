@@ -295,6 +295,7 @@ img {
   gap: 1rem;
   flex-wrap: wrap;
   /* width: 90%; */
+  justify-content: center;
 }
 
 .skills__data {
