@@ -4,308 +4,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Umang Dubey - Full Stack Developer</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Umang Dubey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Umang</a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
+    <header id="header">
+        <nav>
+            <div class="logo">Umang</div>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
 
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Umang Dubey</span><br>Full Stack
-                    Developer</h1>
-
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umangdubey1229@gmail.com" target="_blank"
-                    class="button">Contact</a>
-            </div>
-
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/umangdubey29/" class="home__social-icon"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Umangd29" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home__img">
-                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <mask id="mask0" mask-type="alpha">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image class="home__blob-img" x="50" y="60" href="assets/img/pic.png" />
-                    </g>
-                </svg>
-            </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/umang photo.jpg" alt="">
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="gradient-text">Umang Dubey</span></h1>
+                <p>Full Stack Developer crafting scalable web applications with clean, efficient code.</p>
+                <div class="cta-buttons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=umangdubey1229@gmail.com" target="_blank"
+                        class="btn btn-primary">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/1YFkZMao-mh4L-rKiUZgn8PCTRfvvmbp9/view?usp=sharing" class="btn btn-secondary">View Resume</a>
                 </div>
-
-                <div>
-                    <h2 class="about__subtitle">I'am Umang Dubey</h2>
-                    <p class="about__text">💻 I’m a 3rd-year Computer Engineering student (CPI 8+) with a strong passion
-                        for designing scalable web applications and tackling challenges through clean, efficient code.
-                        Currently advancing my expertise in the MERN stack, while broadening my knowledge in Data
-                        Science and strengthening my DSA problem-solving skills.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/umangdubey29/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Umangd29" target="_blank"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-java skills__icon'></i>
-                        <span class="skills__name">Java</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-python skills__icon'></i>
-                        <span class="skills__name">Python</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxs-copyright skills__icon'></i>
-                        <span class="skills__name">C</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-css3 skills__icon'></i>
-                        <span class="skills__name">CSS3</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-javascript skills__icon'></i>
-                        <span class="skills__name">JAVASCRIPT</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-react skills__icon'></i>
-                        <span class="skills__name">ReactJs</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-bootstrap skills__icon'></i>
-                        <span class="skills__name">Bootstrap</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-nodejs skills__icon'></i>
-                        <span class="skills__name">NodeJs</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-express skills__icon'></i>
-                        <span class="skills__name">ExpressJs</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxs-mongodb skills__icon'></i>
-                        <span class="skills__name">MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='skills__icon'><img src="assets/img/icons8-mysql-logo-48.png" alt="pandas"></i>
-                        <span class="skills__name">MYSQL</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-git skills__icon'></i>
-                        <span class="skills__name">Git</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-github skills__icon'></i>
-                        <span class="skills__name">Github</span>
-                    </div>
-                </div>
-
-                <!-- <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='skills__icon'><img src="assets/img/gsap.png" alt="pandas"></i>
-                            <span class="skills__name">Gsap</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">Locomotive</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-swiper skills__icon'></i>
-                            <span class="skills__name">SwiperJs</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-lenis skills__icon'></i>
-                            <span class="skills__name">LenisJs</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-scrolltrigger skills__icon'></i>
-                            <span class="skills__name">ScrollTrigger</span>
-                        </div>
-                    </div> -->
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='skills__icon'><img src="assets/img/icons8-pandas-48.png" alt="pandas"></i>
-                        <span class="skills__name">Pandas</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='skills__icon'><img src="assets/img/icons8-numpy-48.png" alt="pandas"></i>
-                        <span class="skills__name">Numpy</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='skills__icon'><img src="assets/img/icons8-matplotlib-48.png" alt="pandas"></i>
-                        <span class="skills__name">Matplotlib</span>
-                    </div>
-                </div>
-
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxs-paint skills__icon'></i>
-                        <span class="skills__name">Figma</span>
-                    </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/img/pic2.png" alt="Umang Dubey">
                 </div>
             </div>
-        </section>
-
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
-
-            <div class="work__container bd-grid">
-                <a href="https://explora-travel-booking-listing-website.onrender.com/" class="work__img">
-                    <img src="assets/img/explora snapshot.png" alt="">
-                </a>
-                <a href=" https://umangd29.github.io/DriverX---Interactive-Car-Showcase-Website/" class="work__img">
-                    <img src="assets/img/driverX.png" alt="">
-                </a>
-                <a href=" https://umangd29.github.io/Spotify-mini-project/" class="work__img">
-                    <img src="assets/img/spotify clone.png" alt="">
-                </a>
-            </div>
-        </section>
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="https://formspree.io/f/xldwzezz" method="POST" class="contact__form">
-                    <input type="email" placeholder="Email" name="email" class="contact__input" required>
-                    <textarea name="message" placeholder="your message" class="contact__input" required></textarea>
-                    <button type="submit" class="contact__button button">Send</button>
-                </form>
-            </div>
-
-        </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-        <p class="footer__title">Umang</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
         </div>
-        <p class="footer__copy">&#169; All rigths reserved</p>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image-container">
+                        <img src="assets/img/umang photo.jpg" alt="Umang">
+                    </div>
+                    <div class="about-stats">
+                        <!-- <div class="stat-card">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">CPI</span>
+                        </div> -->
+                        <div class="stat-card">
+                            <span class="stat-number">B.E.</span>
+                            <span class="stat-label">Computer Engineering</span>
+                        </div>
+                        <!-- <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div> -->
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedication</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-intro">
+                        <h3>Passionate Developer Building the Future</h3>
+                        <p>I'm a 3rd-year Computer Engineering student with a strong passion for designing scalable web
+                            applications and tackling challenges through clean, efficient code. With a CPI of 8+, I
+                            combine academic excellence with practical development skills.</p>
+                    </div>
+                    <div class="highlight-cards">
+                        <div class="highlight-card">
+                            <h4><i class='bx bx-code-alt'></i> Full Stack Development</h4>
+                            <p>Currently advancing my expertise in the MERN stack, building dynamic and responsive web
+                                applications with modern technologies and best practices.</p>
+                        </div>
+                        <!-- <div class="highlight-card">
+                            <h4><i class='bx bx-data'></i> Data Science Enthusiast</h4>
+                            <p>Broadening my knowledge in Data Science, exploring machine learning algorithms, and working with data visualization to extract meaningful insights.</p>
+                        </div> -->
+                        <div class="highlight-card">
+                            <h4><i class='bx bx-brain'></i> Problem Solver</h4>
+                            <p>Strengthening my DSA problem-solving skills through consistent practice, focusing on
+                                algorithmic thinking and optimized solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="gradient-text">Skills</span></h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-code-curly'></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-java'></i>
+                                <span>Java</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-python'></i>
+                                <span>Python</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxs-copyright'></i>
+                                <span>C</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-javascript'></i>
+                                <span>JavaScript</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-palette'></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-html5'></i>
+                                <span>HTML5</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-css3'></i>
+                                <span>CSS3</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-react'></i>
+                                <span>React</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-bootstrap'></i>
+                                <span>Bootstrap</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-server'></i>
+                        </div>
+                        <h3>Backend & Database</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-nodejs'></i>
+                                <span>Node.js</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-mongodb'></i>
+                                <span>MongoDB</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Design -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class='bx bx-wrench'></i>
+                        </div>
+                        <h3>Tools & Design</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-git'></i>
+                                <span>Git</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxl-github'></i>
+                                <span>GitHub</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-card-content">
+                                <i class='bx bxs-paint'></i>
+                                <span>Figma</span>
+                                <div class="skill-level">
+                                    <div class="skill-level-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="gradient-text">Work</span></h2>
+                <p>Recent projects I've built</p>
+            </div>
+            <div class="work-grid">
+                <a href="https://explora-travel-booking-listing-website.onrender.com/" target="_blank"
+                    class="work-card">
+                    <img src="assets/img/explora snapshot.png" alt="Explora Project">
+                    <div class="work-overlay">
+                        <i class='bx bx-link-external'></i>
+                    </div>
+                </a>
+                <a href="https://umangd29.github.io/DriverX---Interactive-Car-Showcase-Website/" target="_blank"
+                    class="work-card">
+                    <img src="assets/img/driverX.png" alt="DriverX Project">
+                    <div class="work-overlay">
+                        <i class='bx bx-link-external'></i>
+                    </div>
+                </a>
+                <a href="https://umangd29.github.io/Spotify-mini-project/" target="_blank" class="work-card">
+                    <img src="assets/img/spotify clone.png" alt="Spotify Clone">
+                    <div class="work-overlay">
+                        <i class='bx bx-link-external'></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="gradient-text">Touch</span></h2>
+                <p>Let's work together</p>
+            </div>
+            <form action="https://formspree.io/f/xldwzezz" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Umang Dubey</h3>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/umangdubey29/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Umangd29" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer-copy">©2025 Umang Dubey. All rights reserved.</p>
+        </div>
     </footer>
-
-
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
