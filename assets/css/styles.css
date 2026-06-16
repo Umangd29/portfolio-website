@@ -24,6 +24,10 @@
    overflow-x: hidden;
  }
 
+ html {
+   scroll-behavior: smooth;
+ }
+
  a {
    text-decoration: none;
  }
@@ -735,6 +739,107 @@
    color: rgba(255, 255, 255, 0.6);
  }
 
+ .education {
+   background: var(--bg-secondary);
+ }
+
+ .education-grid {
+   display: grid;
+   gap: 1.5rem;
+ }
+
+ .education-card {
+   background: white;
+   padding: 2rem;
+   border-radius: 20px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+   transition: all 0.3s ease;
+   border-left: 4px solid var(--primary);
+ }
+
+ .education-card:hover {
+   transform: translateX(8px);
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+ }
+
+ .education-card h3 {
+   font-size: 1.3rem;
+   margin-bottom: 0.5rem;
+ }
+
+ .education-card h4 {
+   color: var(--text-light);
+   margin-bottom: 0.75rem;
+   font-weight: 500;
+ }
+
+ .education-meta {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+   color: var(--text-light);
+   font-size: 0.95rem;
+ }
+
+ .education-meta span {
+   font-weight: 600;
+ }
+
+ .cgpa-section {
+   background: white;
+ }
+
+ .cgpa-card {
+   background: var(--bg-secondary);
+   border-radius: 24px;
+   padding: 2rem;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+ }
+
+ /* Achievement Section */
+
+ .achievements {
+   background: white;
+ }
+
+ .achievement-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 2rem;
+ }
+
+ .achievement-card {
+   background: var(--bg-secondary);
+   padding: 2rem;
+   border-radius: 20px;
+   text-align: center;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+ }
+
+ .achievement-card:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 15px 40px rgba(99, 102, 241, 0.15);
+ }
+
+ .achievement-card i {
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   color: var(--primary);
+ }
+
+ .achievement-card h3 {
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+   font-weight: 700;
+ }
+
+ .achievement-card p {
+   color: var(--text-light);
+   line-height: 1.7;
+ }
+
  /* Responsive */
  @media (max-width: 968px) {
    .hero-container {
@@ -805,4 +910,6 @@
    .skills-grid {
      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
    }
+
+
  }
