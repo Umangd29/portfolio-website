@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 new ApexCharts(document.querySelector("#cgpaChart"), {
     series: [{
         name: "CGPA",
-        data: [7.73, 7.88, 8.26, 8.70, 8.39]
+        data: [7.73, 7.88, 8.26, 8.70, 8.39, 9.35]
     }],
 
     chart: {
@@ -67,12 +67,12 @@ new ApexCharts(document.querySelector("#cgpaChart"), {
     markers: { size: 5 },
 
     xaxis: {
-        categories: ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5"]
+        categories: ["Sem 1", "Sem 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6"]
     },
 
     yaxis: {
         min: 7,
-        max: 9
+        max: 10
     }
 
 }).render();
